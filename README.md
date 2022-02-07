@@ -14,8 +14,8 @@ WIP
 ### clone and build the server
 
 ```bash
-your-folder> git clone https://github.com/mkaboldy/kezifutar.git
-your-folder/kezifutar> npm install
+your-folder> git clone https://github.com/mkaboldy/bkk_departures.git
+your-folder/bkk_departures> npm install
 ```
 
 ### configure your local environment
@@ -23,20 +23,20 @@ your-folder/kezifutar> npm install
 define an enviromnet var:
 
 ```bash
-your-folder/kezifutar> $env:NODE_ENV="your-env"
+your-folder/bkk_departures> $env:NODE_ENV="your-env"
 ```
 
 create a config file based on your-folder/config/example.js
 
 ```bash
-vi your-folder/kezifutar/config/your-env.js
+vi your-folder/bkk_departures/config/your-env.js
 ```
 
 ### run the server with the compiled client
 
 ```bash
-your-folder/kezifutar> npm install -g nodemon
-your-folder/kezifutar> nodemon index.js
+your-folder/bkk_departures> npm install -g nodemon
+your-folder/bkk_departures> nodemon index.js
 ```
 
 open your browser <https://your-IP:your-port>
@@ -44,9 +44,9 @@ open your browser <https://your-IP:your-port>
 ### build and run the Angular client only
 
 ```bash
-your-folder/kezifutar/angular> npm install
-your-folder/kezifutar/angular> npm install -g @angular/cli
-your-folder/kezifutar/angular> ng serve --host your-ip --ssl
+your-folder/bkk_departures/angular> npm install
+your-folder/bkk_departures/angular> npm install -g @angular/cli
+your-folder/bkk_departures/angular> ng serve --host your-ip --ssl
 ```
 
 open your browser <https://your-IP:4200>
