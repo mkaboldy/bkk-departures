@@ -1,4 +1,4 @@
-# kezifutar
+# BKK Departures
 
 (M)EAN app to implement a handheld departure board for BKK stops.
 
