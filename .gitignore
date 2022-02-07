@@ -1,0 +1,6 @@
+/node_modules
+/sslcert
+/.vscode
+config/hsdev5.js
+config/hslt1.js
+angular10/debug.log

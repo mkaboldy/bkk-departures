@@ -1,0 +1,7 @@
+.location ul {list-style: none; padding-left: 0;}
+.location ul li a {font-size: 1.3rem;}
+.location .stop {color: white;}
+.location .stop.BUS, .timetable.stop.NIGHTBUS { color: deepskyblue }
+.location .stop.TRAM { color: gold }
+.location .stop.TROLLEYBUS {color: red}
+.location .stop.H5, .timetable.stop.H6, .timetable.stop.H7, .timetable.stop.H8 {color:limegreen }
