@@ -22,7 +22,7 @@
     "compression": "^1.7.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.20"
   },
   "engines": {
     "node": "8.x"
