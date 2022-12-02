@@ -1,0 +1,8 @@
+**/node_modules
+**/.angular
+config/hsdev5.js
+config/hslt1.js
+config/hslt2.js
+**/debug.log
+.husky
+.github
