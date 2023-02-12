@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && node scripts/patch-build.js",
+    "build": "ng build",
+    "postbuild": "node scripts/patch-build.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
