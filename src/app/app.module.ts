@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,7 +18,7 @@ import { AboutComponent } from './components/about/about.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-
+import { BackendInterceptor } from './classes/backend-interceptor';
 
 @NgModule({
   declarations: [
@@ -34,11 +34,16 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
     BrowserAnimationsModule,
     MatSlideToggleModule,
   ],
-  providers: [HttpClientModule],
-  bootstrap: [AppComponent]
+  providers: [
+    HttpClientModule,
+    { provide: HTTP_INTERCEPTORS, useClass: BackendInterceptor, multi: true },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
